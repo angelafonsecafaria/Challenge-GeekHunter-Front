@@ -1,13 +1,37 @@
-<section class="jobs_listing">
-    <div class="container">
-      <div class="jobs_container">
-        <div class="jobs_wrapper">
-          <div class="jobs_list" id="list">
-            <div class="jobs_card">
-              
+<section>
+  <div class="container">
+    <div class="wrapper">
+      <div class="list" id="list">
+        <div class="card" *ngFor="let candidate of candidates; let i = index">
+          <div class="img">
+            <img style="width: 150px;" src="../../../assets/img/candidates.png" alt="candidates" />
+          </div>
+          <div class="profile">
+            <div class="profile_header">
+              <div class="name">
+                <h4>Candidate {{ candidate.id }}</h4>
+              </div>
+            </div>
+            <div class="profile-middle">
+              <div class="position">
+                <h1>{{ candidate.city }}</h1>
+              </div>
+            </div>
+            <div class="profile-footer">
+              <div class="experience">
+                <p>{{ candidate.experience }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="technologies">
+            <div class="filter-tags">
+              <div class="tags" *ngFor="let tech of candidate.technologies; let i = index">
+                {{ tech.name }}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
