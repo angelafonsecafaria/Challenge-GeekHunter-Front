@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ce9dec59;
+  font-size: 1rem;
+}
+
+/* *CSS Variable */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #2b393a;
+  --primary-color: #6E2B77;;
+  --secondry-color: #eefafc;
+  --job-title-color: #2d3939;
+  --jon-title-color-hover: #6E2B77;;
+  --sub-font-color: #969a9b;
+
+  --w-100: 100%;
+  --w-80: 80%;
+
+  --br-8: 8px;
+  --br-5: 5px;
+}
