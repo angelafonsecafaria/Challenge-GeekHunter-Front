@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { CandidatesService } from 'src/app/services/candidates/candidates.service';
-import { CandidatesDetails } from 'src/app/shared/interfaces/candidates';
+import { CandidatesService } from '../../services/candidates/candidates.service';
+import { CandidatesDetails } from '../../shared/models/candidates';
 
 @Component({
   selector: 'app-home',
